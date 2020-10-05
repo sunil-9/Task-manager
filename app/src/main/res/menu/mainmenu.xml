@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomeActivity">
+    <item android:id="@+id/language"
+        android:title="@string/change_language"
+        android:icon="@drawable/ic_power_settings_new_black_24dp"
+        />
+    <item android:id="@+id/darkmode"
+        android:title="@string/dark_mode"
+        android:icon="@drawable/ic_power_settings_new_black_24dp"
+        />
+    <item android:id="@+id/logout"
+        android:title="@string/log_out"
+        android:icon="@drawable/ic_power_settings_new_black_24dp"
+        />
+</menu>
