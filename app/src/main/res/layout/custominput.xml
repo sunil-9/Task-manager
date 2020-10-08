@@ -22,7 +22,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="15dp"
-                    android:text="Add Your Task"
+                    android:text="@string/add_your_task"
                     android:background="@drawable/toolbar"
                     android:textColor="#ffffff"
                     android:gravity="center"
@@ -45,7 +45,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
-                        android:text="Title:"
+                        android:text="@string/title"
                         android:textColor="#000000"
                         android:textAppearance="?android:textAppearanceMedium" />
 
@@ -61,7 +61,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
-                        android:hint="title"
+                        android:hint="@string/title_hint"
                         android:textColor="#000000"
                         android:textAppearance="?android:textAppearanceMedium" />
 
@@ -83,7 +83,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
-                        android:text="Note:"
+                        android:text="@string/note"
                         android:textColor="#000000"
                         android:textAppearance="?android:textAppearanceMedium" />
 
@@ -99,7 +99,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
-                        android:hint="Note"
+                        android:hint="@string/note_hint"
                         android:textColor="#000000"
                         android:textAppearance="?android:textAppearanceMedium" />
 
@@ -123,7 +123,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
-                        android:text="Save"
+                        android:text="@string/save"
                         android:background="@drawable/editdesign"
                         android:textColor="#ffffff"
 

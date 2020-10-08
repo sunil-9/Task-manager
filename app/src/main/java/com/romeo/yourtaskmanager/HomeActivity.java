@@ -20,7 +20,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import androidx.appcompat.widget.Toolbar;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
@@ -43,20 +43,25 @@ public class HomeActivity extends AppCompatActivity {
     private String title;
     private String note;
     private String post_key;
+    private Toolbar toolbar;
 
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-//        getSupportActionBar(R.id.custom_toolbar);
+
+        toolbar= findViewById(R.id.custom_toolbar);
+        setSupportActionBar(toolbar);
+
+
+//        getSupportActionBar();
 //        getSupportActionBar().setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
 //        Objects.requireNonNull(getSupportActionBar()).setCustomView(R.layout.custom_toolbar);
 //        getActionBar(R.id.custom_toolbare);
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//        getSupportActionBar().setHomeButtonEnabled(true);
 
-
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setHomeButtonEnabled(true);
 //        TextView textView = getSupportActionBar().getCustomView().findViewById(R.id.toolbar_title);
 //        textView.setText("Task Manager");
 
@@ -108,6 +113,26 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
     }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.mainmenu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.logout:
+                mauth.signOut();
+                startActivity(new Intent(HomeActivity.this, MainActivity.class));
+                finish();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 
     public void update_date() {
         AlertDialog.Builder myDialog = new AlertDialog.Builder(HomeActivity.this);
@@ -194,7 +219,6 @@ public class HomeActivity extends AppCompatActivity {
                     }
                 });
 
-//                viewHolder.
             }
         };
         recyclerView.setAdapter(adapter);
@@ -222,24 +246,6 @@ public class HomeActivity extends AppCompatActivity {
             TextView mdate = myView.findViewById(R.id.date);
             mdate.setText(date);
         }
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.mainmenu, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.logout:
-                mauth.signOut();
-                startActivity(new Intent(HomeActivity.this, MainActivity.class));
-                finish();
-                break;
-        }
-        return super.onOptionsItemSelected(item);
     }
 }
 

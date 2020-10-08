@@ -19,7 +19,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Log In"
+                android:text="@string/log_in"
                 android:textAppearance="?android:textAppearanceLarge"
                 android:textSize="40dp"
                 android:textColor="#ffffff"

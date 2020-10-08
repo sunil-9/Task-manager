@@ -22,7 +22,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="15dp"
-                    android:text="Update your note"
+                    android:text="@string/update_your_note"
                     android:background="@drawable/toolbar"
                     android:textColor="#ffffff"
                     android:gravity="center"
@@ -61,7 +61,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
-                        android:hint="title"
+                        android:hint="@string/title_hint"
                         android:textColor="#000000"
                         android:textAppearance="?android:textAppearanceMedium" />
 
@@ -83,7 +83,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
-                        android:text="Note:"
+                        android:text="@string/note"
                         android:textColor="#000000"
                         android:textAppearance="?android:textAppearanceMedium" />
 
@@ -99,7 +99,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
-                        android:hint="Note"
+                        android:hint="@string/note_hint"
                         android:textColor="#000000"
                         android:textAppearance="?android:textAppearanceMedium" />
 
@@ -123,7 +123,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
-                        android:text="Delete"
+                        android:text="@string/delete"
                         android:background="@drawable/editdesign"
                         android:textColor="#ffffff"
 
@@ -141,7 +141,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
-                        android:text="Update"
+                        android:text="@string/update"
                         android:background="@drawable/editdesign"
                         android:textColor="#ffffff"
 
