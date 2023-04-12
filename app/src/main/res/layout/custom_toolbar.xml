@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/custom_toolbar"
+    app:menu="@menu/mainmenu"
     android:background="@drawable/toolbar"
     android:orientation="horizontal">
 
@@ -28,7 +29,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginLeft="8dp"
-                android:text="Task Manager"
+                android:text="@string/task_manager"
                 android:textColor="#fff"
                 android:textSize="18dp"
                 android:textStyle="bold" />

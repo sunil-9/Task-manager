@@ -12,4 +12,18 @@
     <string name="change_language">change Language</string>
     <string name="dark_mode">Dark Mode</string>
     <string name="log_out">Log Out</string>
+    <string name="note_here">This is the default note for the application task manager and this text will be updated by firebase cotent</string>
+    <string name="log_in">Log In</string>
+    <string name="sign_up">Sign up</string>
+    <string name="already_have_account_login">Already have account? Login</string>
+    <string name="task_manager">Task Manager</string>
+    <string name="add_your_task">Add Your Task</string>
+    <string name="title">Title:</string>
+    <string name="note">Note:</string>
+    <string name="note_hint">Note</string>
+    <string name="title_hint">title</string>
+    <string name="save">Save</string>
+    <string name="update_your_note">Update your note</string>
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
 </resources>
